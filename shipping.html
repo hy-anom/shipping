@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Shippers</title>
+  <title>Shippers - Shipping</title>
 
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 
   <!-- STYLE -->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="stylo.css">
-  <link rel="stylesheet" href="stylo-tracking.css">
+  <link rel="stylesheet" href="stylo-shipping.css">
 
   <!-- SCRIPT -->
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    crossorigin="anonymous"
-    defer
-  ></script>
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    defer
-  ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
 </head>
 <body>
 
@@ -35,13 +26,8 @@
   <!-- <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button
-          type="button"
-          class="navbar-toggle collapsed"
-          data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false"
-        >
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -52,9 +38,7 @@
         </a>
       </div>
 
-      <div
-        class="collapse navbar-collapse"
-      >
+      <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-shrink">
           <li>
             <select name="language" id="language" class="navbar-select">
@@ -132,20 +116,33 @@
 
   <!-- JUMBOTRON -->
   <section id="#jumbotron" class="jumbotron">
-    <div class="jumbotron-content jumbotron-content-tracking">
-      <h1>Tracking</h1>
+    <div class="jumbotron-content container">
+      <h1>Shipping Rates</h1>
       <h2>
-        Enter up to 10 orders IDs or Airwall Bill Numbers separated by comma, you can track it by phone number too
+        Compare rates between our partner carriers
       </h2>
-      <form class="tracking-form">
-        <textarea
-          name="trackingInput"
-          id="trackingInput"
-          class="tracking-input"
-          placeholder="eg: 01990-0239010-9123"></textarea>
-        <button role="submit" class="btn btn-primary tracking-button">
-          Track
-        </button>
+      <form class="shipping-form">
+        <div class="form-group shipping-input-group">
+          <label for="locationDeparture" class="shipping-label">From:</label>
+          <input type="text" class="form-control shipping-input" id="locationDeparture" placeholder="Eg. Yogyakarta">
+        </div>
+        <div class="form-group shipping-input-group">
+          <label for="locationArrival" class="shipping-label">To:</label>
+          <input type="text" class="form-control shipping-input" id="locationArrival" placeholder="Eg. Pekanbaru">
+        </div>
+        <div class="form-group shipping-input-group">
+          <label for="shippingWeight" class="shipping-label">
+            Weight (kg):
+          </label>
+          <input type="number" class="form-control shipping-input" id="shippingWeight" placeholder="eg. 8">
+        </div>
+        <div class="shipping-input-group shipping-calculator">
+          <img src="images/icon-calculator.png" alt="">
+        </div>
+        <div class="shipping-input-group">
+          <button type="submit" class="btn  shipping-button">
+            Check Rates</button>
+        </div>
       </form>
     </div>
 
@@ -153,21 +150,45 @@
 
   <!-- FILTER BAR -->
   <section id="filter" class="filter-bar">
-    <!-- alert -->
-    <div id="alert" class="container alert-container">
-      <div class="alert-danger">
-        No Carrier is match for 6 Order ID : 12321, 213213, 213123, 123123
+
+    <div id="filter" class="container filter-container">
+      <div class="form-group form-filter-group material-card-1 hidden-xs">
+        <label for="filter-carrier">Carrier</label>
+        <select name="filter-carrier" id="carrier" class="filter-carrier">
+          <option value="">All Carrier</option>
+        </select>
+      </div>
+
+      <div class="form-group form-filter-group material-card-1 hidden-xs">
+        <label for="filter-service">Service Type</label>
+        <select name="filter-service" id="service" class="filter-service">
+          <option value="">All Delivery Type</option>
+        </select>
+      </div>
+
+      <div class="form-group form-filter-group material-card-1 hidden-xs">
+        <label for="filter-sort">Sort</label>
+        <select name="filter-sort" id="sort" class="filter-sort">
+          <option value="">The Cheapest</option>
+        </select>
+      </div>
+
+      <div class="form-group visible-xs">
+        <button class="btn btn-primary">Filters</button>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-secondary">Reset Filter</button>
       </div>
     </div>
 
-    <div class=""></div>
   </section>
 
   <!-- TRACKING LIST -->
   <section id="trackingList" class="tracking-list">
 
-    <!-- the list -->
-    <div class="container tracking-list-container">
+    <!-- the list for desktop -->
+    <div class="container tracking-list-container hidden-xs">
       <!-- item 1 -->
       <div class="list-item material-card-1">
         <div class="list-column list-column-logo">
@@ -177,23 +198,26 @@
         <div class="list-column hidden-xs">
           <div class="list-title">Carrier</div>
           <div class="list-row list-company">Alfatext</div>
-          <div class="list-row list-status">Berhasil Dikirim</div>
         </div>
         <div class="list-column">
-          <div class="list-title">Kode Pengiriman</div>
+          <div class="list-title">Service Type</div>
           <div class="list-row visible-xs">Berhasil Dikirim</div>
-          <div class="list-row">#1231312311</div>
-          <div class="list-row">08 Feb 2019 06:00 PM</div>
-          <div class="list-row">AWB: 131312313123123</div>
+          <div class="list-row">Next Day Service</div>
         </div>
         <div class="list-column hidden-xs">
           <div class="list-title">Pengirim</div>
           <div class="list-row">Power Commerce Indonesia</div>
         </div>
         <div class="list-column hidden-xs">
-          <div class="list-title">Tujuan</div>
-          <div class="list-row">Bumi Kencana</div>
-          <div class="list-row">Sungai Lilin, Musi, Banyuasin</div>
+          <div class="list-title">Estimated Time</div>
+          <div class="list-row">2 Days</div>
+        </div>
+        <div class="list-column hidden-xs">
+          <div class="list-title">Price</div>
+          <div class="list-row">Rp. 125.000</div>
+        </div>
+        <div class="list-column hidden-xs list-column-button">
+          <button class="btn btn-primary">Create Orders</button>
         </div>
       </div>
 
@@ -206,23 +230,26 @@
         <div class="list-column hidden-xs">
           <div class="list-title">Carrier</div>
           <div class="list-row list-company">Alfatext</div>
-          <div class="list-row list-status">Berhasil Dikirim</div>
         </div>
         <div class="list-column">
-          <div class="list-title">Kode Pengiriman</div>
+          <div class="list-title">Service Type</div>
           <div class="list-row visible-xs">Berhasil Dikirim</div>
-          <div class="list-row">#1231312311</div>
-          <div class="list-row">08 Feb 2019 06:00 PM</div>
-          <div class="list-row">AWB: 131312313123123</div>
+          <div class="list-row">Next Day Service</div>
         </div>
         <div class="list-column hidden-xs">
           <div class="list-title">Pengirim</div>
           <div class="list-row">Power Commerce Indonesia</div>
         </div>
         <div class="list-column hidden-xs">
-          <div class="list-title">Tujuan</div>
-          <div class="list-row">Bumi Kencana</div>
-          <div class="list-row">Sungai Lilin, Musi, Banyuasin</div>
+          <div class="list-title">Estimated Time</div>
+          <div class="list-row">2 Days</div>
+        </div>
+        <div class="list-column hidden-xs">
+          <div class="list-title">Price</div>
+          <div class="list-row">Rp. 125.000</div>
+        </div>
+        <div class="list-column hidden-xs list-column-button">
+          <button class="btn btn-primary">Create Orders</button>
         </div>
       </div>
 
@@ -235,33 +262,57 @@
         <div class="list-column hidden-xs">
           <div class="list-title">Carrier</div>
           <div class="list-row list-company">Alfatext</div>
-          <div class="list-row list-status">Berhasil Dikirim</div>
         </div>
         <div class="list-column">
-          <div class="list-title">Kode Pengiriman</div>
+          <div class="list-title">Service Type</div>
           <div class="list-row visible-xs">Berhasil Dikirim</div>
-          <div class="list-row">#1231312311</div>
-          <div class="list-row">08 Feb 2019 06:00 PM</div>
-          <div class="list-row">AWB: 131312313123123</div>
+          <div class="list-row">Next Day Service</div>
         </div>
         <div class="list-column hidden-xs">
           <div class="list-title">Pengirim</div>
           <div class="list-row">Power Commerce Indonesia</div>
         </div>
         <div class="list-column hidden-xs">
-          <div class="list-title">Tujuan</div>
-          <div class="list-row">Bumi Kencana</div>
-          <div class="list-row">Sungai Lilin, Musi, Banyuasin</div>
+          <div class="list-title">Estimated Time</div>
+          <div class="list-row">2 Days</div>
+        </div>
+        <div class="list-column hidden-xs">
+          <div class="list-title">Price</div>
+          <div class="list-row">Rp. 125.000</div>
+        </div>
+        <div class="list-column hidden-xs list-column-button">
+          <button class="btn btn-primary">Create Orders</button>
         </div>
       </div>
 
     </div>
 
+    <!--
+      I took liberty to create second list specifically for mobile web
+      bcz creating responsive list using current design will create too many trouble. It would be extremely difficult to maintenace especially
+      if you are planning to add some new column.
+    -->
+
+    <div class="container tracking-list-container visible-xs">
+      <div class="list-item material-card-1">
+        <div class="list-column list-column-logo">
+          <img src="images/logo.png" alt="" class="list-logo-image">
+          <p class="list-logo-title visible-xs">Shipper</p>
+        </div>
+        <div class="list-column hidden-xs">
+          <div class="list-title">Carrier</div>
+          <div class="list-row list-company">Alfatext</div>
+          <div class="list-column hidden-xs list-column-button">
+            <button class="btn btn-primary">Create Orders</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- the pagination -->
-    <nav
-      aria-label="Tracking list navigation"
-      class="container tracking-list-pagination-container"
-    >
+    <nav aria-label="Tracking list navigation" class="container tracking-list-pagination-container">
       <ul class="pagination tracking-list-pagination">
         <li>
           <a href="#" aria-label="First">
@@ -298,6 +349,10 @@
         </li>
       </ul>
     </nav>
+
+    <div class="container button-login-container">
+      <button class="btn btn-primary btn-stretch">Register or Login to see all results</button>
+    </div>
   </section>
 
 
@@ -358,12 +413,13 @@
               <img src="images/icon-whatsapp.svg" alt="">
             </span>
             <strong>+62 819 1234 5678</strong>
-        </p>
+          </p>
         </div>
 
       </div>
     </div>
   </footer>
+
 
 </body>
 </html>
