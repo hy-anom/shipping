@@ -79,7 +79,7 @@
 .form-filter-group {
   padding: 14px 20px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .filter-carrier, .filter-service, .filter-sort {
   border: none;
@@ -90,6 +90,12 @@
 
 
 /* LIST SHIPPING */
+
+
+.btn-list {
+  padding: 14px 12px;
+  width: 128px;
+}
 
 @media only screen and (max-width: 767px) {
   .list-column {
