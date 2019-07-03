@@ -91,7 +91,6 @@
 
 /* LIST SHIPPING */
 
-
 .btn-list {
   padding: 14px 12px;
   width: 128px;
@@ -108,5 +107,17 @@
   .list-logo-image {
     width: 90%;
     margin-top: 0;
+  }
+
+
+  .list-row-mobile {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .list-row-mobile div {
+    flex: 1;
+  }
+  .btn-list-mobile {
+    margin-top: 15px;
   }
 }

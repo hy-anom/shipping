@@ -288,8 +288,9 @@
     </div>
 
     <!--
-      I took liberty to create second list specifically for mobile web
-      bcz creating responsive list using current design will create too many trouble. It would be extremely difficult to maintenace especially
+      I created second list specifically for mobile web
+      bcz creating responsive list using current design will create too many trouble.
+      It would be extremely difficult to maintenace especially
       if you are planning to add some new column.
     -->
 
@@ -299,11 +300,22 @@
           <img src="images/logo.png" alt="" class="list-logo-image">
           <p class="list-logo-title visible-xs">Shipper</p>
         </div>
-        <div class="list-column hidden-xs">
-          <div class="list-title">Carrier</div>
-          <div class="list-row list-company">Alfatext</div>
-          <div class="list-column hidden-xs list-column-button">
-            <button class="btn btn-primary">Create Orders</button>
+        <div class="list-column visible-xs">
+          <div class="list-row list-row-mobile">
+            <div class="">Service Type</div>
+            <div class="">RGS</div>
+          </div>
+          <div class="list-row list-row-mobile">
+            <div class="">Price</div>
+            <div class="">Rp. 128.000</div>
+          </div>
+          <div class="list-row list-row-mobile">
+            <div class="">Estimated</div>
+            <div class="">ETD 2 Days</div>
+          </div>
+
+          <div class="list-row visible-xs list-column-button">
+            <button class="btn btn-primary btn-list-mobile">Create Orders</button>
           </div>
         </div>
       </div>
@@ -311,7 +323,7 @@
 
 
 
-    <!-- the pagination -->
+    <!-- the PAGINATION -->
     <nav aria-label="Tracking list navigation" class="container tracking-list-pagination-container">
       <ul class="pagination tracking-list-pagination">
         <li>
@@ -354,6 +366,9 @@
       <button class="btn btn-primary btn-stretch">Register or Login to see all results</button>
     </div>
   </section>
+
+
+
 
 
   <!-- FOOTER -->
