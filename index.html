@@ -122,12 +122,35 @@
       </div>
 
       <div class="navbar-right">
-        <a href="" class="navbar-menu-collapse">
+        <a class="navbar-menu-collapse" onclick="openNav()">
           <img src="images/icon-menu.svg" class="navbar-menu-collapse-icon" alt="">
         </a>
       </div>
     </div>
+    <div id="mySidenav" class="sidenav material-card-1">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidebar-select">
+        <select name="language" id="language" class="navbar-select">
+          <option value="lang-en">English</option>
+          <option value="lang-id">Indonesia</option>
+        </select>
+      </div>
+      <a href="#">Home</a>
+      <a href="#">Solution</a>
+      <a href="#">Shipping Rates</a>
+      <a href="#">Tracking</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQ</a>
+      <a href="#">Press</a>
+      <a href="#">Career</a>
+      <div class="sidebar-button">
+        <button class="btn btn-secondary navbar-button">Login</button>
+        <button class="btn btn-primary navbar-button">Register</button>
+      </div>
+    </div>
   </nav>
+
+
 
 
   <!-- JUMBOTRON -->
@@ -151,6 +174,12 @@
 
   </section>
 
+
+
+
+
+
+
   <!-- FILTER BAR -->
   <section id="filter" class="filter-bar">
     <!-- alert -->
@@ -160,8 +189,118 @@
       </div>
     </div>
 
-    <div class=""></div>
+    <div class="container filter-container">
+      <div class="filter-bar-container material-card-1 visible-lg">
+        <div class="filter-select">
+          <label for="filter-show">Show</label>
+          <select name="filter-show" id="filterShow" class="filter-input">
+            <option value="">5</option>
+            <option value="">10</option>
+            <option value="">15</option>
+          </select>
+        </div>
+
+        <span class="filter-separator"></span>
+
+        <div class="filter-calendar">
+          <img src="images/icon-calendar.png" alt="">
+          <label for="filter-calendar-departure">From</label>
+          <input type="date" name="filter-calendar-departure" id="" class="filter-input">
+        </div>
+
+        <div class="filter-calendar">
+          <label for="filter-calendar-arrival">To</label>
+          <input type="date" name="filter-calendar-arrival" id="" class="filter-input">
+        </div>
+
+        <span class="filter-separator"></span>
+
+        <div class="filter-select">
+          <label for="filter-sort">Sort by</label>
+          <select name="filter-sort" id= "filterSort" class="filter-input">
+            <option value="">Latest</option>
+            <option value="">Oldest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-button-container visible-lg">
+        <div class="button-reset">
+          <button class="btn btn-secondary">Reset</button>
+        </div>
+        <div class="button-reset">
+          <input type="text" placeholder="Search" class="search-input material-card-1">
+        </div>
+      </div>
+
+      <div class="form-group hidden-lg form-filter-button">
+        <button
+          class="btn btn-primary btn-filter"
+          data-toggle="modal"
+          data-target="#filterModal">
+          Filters
+        </button>
+      </div>
+
+      <div class="form-group hidden-lg form-filter-button form-filter-button-right">
+        <button class="btn btn-secondary btn-filter">Reset Filter</button>
+      </div>
+    </div>
+
+    <!-- filter modal -->
+    <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Filter</h4>
+          </div>
+          <div class="modal-body">
+            <div class="filter-select">
+              <label for="filter-show">Show</label>
+              <select name="filter-show" id="filterShow" class="filter-input">
+                <option value="">5</option>
+                <option value="">10</option>
+                <option value="">15</option>
+              </select>
+            </div>
+            <div class="filter-calendar">
+              <label for="filter-calendar-departure">From</label>
+              <input type="date" name="filter-calendar-departure" id="" class="filter-input">
+            </div>
+            <div class="filter-calendar">
+              <label for="filter-calendar-arrival">To</label>
+              <input type="date" name="filter-calendar-arrival" id="" class="filter-input">
+            </div>
+
+            <div class="filter-select">
+              <label for="filter-sort">Sort by</label>
+              <select name="filter-sort" id="filterSort" class="filter-input">
+                <option value="">Latest</option>
+                <option value="">Oldest</option>
+              </select>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn btn-secondary">
+              Reset
+            </button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+
+
+
 
   <!-- TRACKING LIST -->
   <section id="trackingList" class="tracking-list">
@@ -364,6 +503,17 @@
       </div>
     </div>
   </footer>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
 
 </body>
 </html>
