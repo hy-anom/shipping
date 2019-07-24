@@ -2,7 +2,6 @@
 /* THIS IS FOR SPECIFICALLY tracking.html */
 /* ************************************** */
 
-
 /* JUMBOTRON */
 
 .jumbotron-content-tracking {
@@ -13,16 +12,22 @@
   background-color: #fff;
   max-width: 100%;
   padding: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   margin-top: 30px;
 }
 .tracking-input {
   width: 100%;
   resize: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px;
   border: 1px #ccc solid;
   color: #666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   height: 120px;
 }
@@ -30,12 +35,6 @@
   width: 100%;
   margin-top: 25px;
 }
-
-
-
-
-
-
 
 /* TRACKING LIST*/
 
@@ -46,6 +45,10 @@
   .list-column-logo {
     width: 30%;
     text-align: left;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
   .list-logo-image {
