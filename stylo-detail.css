@@ -72,3 +72,34 @@
 .detail-info:last-child::before {
   filter: grayscale(1);
 }
+
+
+@media screen and (max-width: 767px) {
+  .detail-info {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    max-width: 260px;
+  }
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-info-image{
+    margin: 0;
+    width: 50px;
+  }
+  .detail-info-caption {
+    padding: 0 5px;
+  }
+  .detail-info:not(:first-child)::before {
+    width: 100px;
+    height: 100%;
+    left: -120px;
+    top: -48px;
+    transform: rotate(90deg);
+  }
+}
