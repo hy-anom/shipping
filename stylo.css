@@ -194,13 +194,15 @@ body {
 }
 
 @media only screen and (max-width: 1199px) {
-  .navbar-left,
-  .navbar-right {
+  .navbar-left {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+  }
+  .navbar-right {
+    flex: 0;
   }
 
   .navbar-menu-collapse-icon {
@@ -545,7 +547,6 @@ body {
   text-align: center;
 }
 .list-title {
-  font-weight: 600;
   font-size: 16px;
   margin-bottom: 20px;
 }
