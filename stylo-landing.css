@@ -1,0 +1,138 @@
+.jumbotron h1, .jumbotron h2 {
+  text-align: left;
+  width: 50%;
+  min-width: 700px;
+}
+.jumbotron-landing-button {
+  background-color: #FFC945;
+  border: none;
+  width: 240px;
+  margin-top: 60px;
+}
+.jumbotron-landing-button:hover {
+  background-color: #D2A129;
+}
+
+
+
+
+
+
+
+
+
+
+section.grids {
+  background-color: #fff;
+}
+.grids-container {
+  padding: 120px 0 90px
+}
+.grids-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.grids-header hr{
+  border-color: #FFC945;
+  width: 100px;
+  border-width: 5px;
+}
+.grids-box {
+  text-align: center;
+  height: 300px;
+}
+.grid-title {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.grid-caption {
+  max-width: 250px;
+  margin: 15px auto;
+}
+
+
+
+
+
+
+section.feature {
+  background-color: #F7F8FA;
+}
+.feature-container {
+  display: flex;
+  padding: 100px 25px;
+}
+.feature-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 35px;
+  text-align: center;
+}
+.separate-right {
+  margin-right: 80px;
+}
+.separate-left {
+  margin-left: 80px;
+}
+.feature-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.feature-subtitle {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.feature-list {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+.feature-list li {
+  margin-bottom: 20px;
+}
+.feature-button {
+  width: 240px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .separate-right {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .separate-left {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+section.fulfillment {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/landing/bg-fulfillment.png');
+}
+
+.fulfillment-container {
+  padding: 135px 15px;
+}
+
+.fulfillment-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.fulfillment-caption {
+  margin-bottom: 40px;
+}
+.fulfillment-button {
+  width: 240px;
+}

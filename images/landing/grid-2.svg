@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rectangle" d="M80,0l80,80L80,160,0,80Z" fill="#e7edf3"/>
+    </clipPath>
+  </defs>
+  <g id="create_manage_order" transform="translate(-263 -5073)">
+    <g id="Edits" transform="translate(262.306 5072.291)">
+      <g id="Rectangle-11" transform="translate(0.694 0.709)">
+        <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+          <path id="Rectangle-2" data-name="Rectangle" d="M80,0l80,80L80,160,0,80Z" fill="#e7edf3"/>
+          <path id="Combined-Shape" d="M42.327,108.791l9.816,9.816H29.923l-9.283-9.816Z" transform="translate(0 0)" fill="#ff453b" fill-rule="evenodd" opacity="0.25"/>
+          <path id="Combined-Shape-2" data-name="Combined-Shape" d="M56.327,25.791l9.816,9.816H43.923L34.64,25.791Z" transform="translate(0 0)" fill="#ff453b" fill-rule="evenodd" opacity="0.25"/>
+          <path id="Combined-Shape-3" data-name="Combined-Shape" d="M126.327,38.791l9.816,9.816H113.923l-9.283-9.816Z" transform="translate(0 0)" fill="#ff453b" fill-rule="evenodd" opacity="0.25"/>
+          <path id="Combined-Shape-4" data-name="Combined-Shape" d="M119.327,119.791l9.816,9.816H106.923l-9.283-9.816Z" transform="translate(0 0)" fill="#ff453b" fill-rule="evenodd" opacity="0.25"/>
+        </g>
+      </g>
+    </g>
+    <g id="Edits-2" data-name="Edits" transform="translate(282.634 5103.652)">
+      <g id="Shipper---May-23---Desktop-Select" transform="translate(-1032 -2840)">
+        <g id="Group-24" transform="translate(200 2551)">
+          <g id="Group-41">
+            <g id="Group-40" transform="translate(739.333 273)">
+              <g id="Group-68" transform="translate(115.033 31.287) rotate(-10)">
+                <g id="Group-67">
+                  <g id="Group-107" transform="translate(0 4.051)">
+                    <rect id="Rectangle-3" data-name="Rectangle" width="54.612" height="70.996" rx="3" fill="#ff453b"/>
+                    <path id="Rectangle-4" data-name="Rectangle" d="M5.461,0h43.69V63.534a2,2,0,0,1-2,2H7.461a2,2,0,0,1-2-2Z" fill="#fff" fill-rule="evenodd"/>
+                    <circle id="Oval" cx="15.895" cy="15.895" r="15.895" transform="translate(26.643 40.343)" fill="#3f0005" opacity="0.2"/>
+                    <g id="Group-55">
+                      <g id="Group-54" transform="translate(14.199 18.568)">
+                        <g id="Group_198" data-name="Group 198">
+                          <path id="Path-3" d="M12.531,3.277H25.638" fill="none" stroke="#ff453b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                          <path id="Path-19" d="M0,2.8,2.7,5.5,7.646.55" fill="none" stroke="#ff453b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                        </g>
+                        <g id="Group_199" data-name="Group 199" transform="translate(0.178 13.189)">
+                          <circle id="Oval-2" data-name="Oval" cx="3.277" cy="3.277" r="3.277" transform="translate(0 0)" stroke-width="1.5" stroke="#ff933a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                          <path id="Path-3-2" data-name="Path-3" d="M12.531,3.277H25.638" fill="none" stroke="#ff933a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                        </g>
+                        <g id="Group_200" data-name="Group 200" transform="translate(0.178 27.388)">
+                          <circle id="Oval-3" data-name="Oval" cx="3.277" cy="3.277" r="3.277" transform="translate(0 0)" stroke-width="1.5" stroke="#ff933a" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                          <path id="Path-3-3" data-name="Path-3" d="M12.531,3.277H25.638" fill="none" stroke="#ff933a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <rect id="Rectangle-5" data-name="Rectangle" width="26.214" height="11.915" rx="5.455" transform="translate(14.199)" fill="#e12f25"/>
+                </g>
+                <circle id="Oval-4" data-name="Oval" cx="15.385" cy="15.385" r="15.385" transform="translate(32.224 48.706)" fill="#ffc945"/>
+                <g id="Group-76" transform="translate(39.916 56.398)">
+                  <path id="Combined-Shape-5" data-name="Combined-Shape" d="M5,14.417A7.684,7.684,0,0,1,2.8,13.141l.123-1.13A3,3,0,0,0,1.146,8.942L.105,8.483a7.781,7.781,0,0,1,0-2.548l1.041-.459A3,3,0,0,0,2.918,2.406L2.8,1.276A7.684,7.684,0,0,1,5,0L5.92.673a3,3,0,0,0,3.544,0L10.383,0a7.684,7.684,0,0,1,2.206,1.276l-.123,1.13a3,3,0,0,0,1.772,3.069l1.041.459a7.781,7.781,0,0,1,0,2.548l-1.041.459a3,3,0,0,0-1.772,3.069l.123,1.13a7.684,7.684,0,0,1-2.206,1.276l-.919-.673a3,3,0,0,0-3.544,0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+                  <circle id="Oval-5" data-name="Oval" cx="2.051" cy="2.051" r="2.051" transform="translate(5.641 5.157)" stroke-width="1.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

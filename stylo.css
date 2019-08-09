@@ -28,6 +28,7 @@ body {
   padding: 14px 20px;
   height: auto;
   font-weight: bold;
+  transition: all 0.3s;
 }
 .btn-primary:hover,
 .btn-primary:active,
