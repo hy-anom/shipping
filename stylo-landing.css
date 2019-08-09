@@ -8,18 +8,31 @@
 .jumbotron h1, .jumbotron h2 {
   text-align: left;
   width: 50%;
-  min-width: 700px;
+  max-width: 500px;
+}
+.jumbotron h1 {
+  font-size: 46px;
 }
 .jumbotron-landing-button {
   background-color: #FFC945;
   border: none;
   width: 240px;
+  height: 60px;
   margin-top: 60px;
 }
 .jumbotron-landing-button:hover {
   background-color: #D2A129;
 }
-
+@media screen and (max-width: 767px) {
+  .jumbotron h1, .jumbotron h2 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .jumbotron {
+    text-align: center;
+  }
+}
 
 
 
@@ -73,7 +86,7 @@ section.feature {
 }
 .feature-box {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 30px 35px;
   text-align: center;
   flex: 1;
@@ -86,7 +99,7 @@ section.feature {
 }
 .feature-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 25px;
 }
 .feature-subtitle {
@@ -97,6 +110,7 @@ section.feature {
   text-align: left;
   margin-bottom: 40px;
   margin-top: 25px;
+  list-style-image: url('images/landing/check.svg');
 }
 .feature-list li {
   margin-bottom: 20px;
@@ -112,7 +126,7 @@ section.feature {
   }
   .separate-right {
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
   .separate-left {
     margin-left: 0;
@@ -139,8 +153,17 @@ section.fulfillment {
   margin-bottom: 40px;
 }
 .fulfillment-caption {
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
+  width: 800px;
 }
 .fulfillment-button {
   width: 240px;
+}
+
+@media screen and (max-width: 767px) {
+  .fulfillment-caption {
+    width: 100%;
+  }
+
 }

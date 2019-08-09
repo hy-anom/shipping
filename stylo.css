@@ -57,6 +57,9 @@ body {
   -moz-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+.material-card-2 {
+  box-shadow: 0 20px 20px rgba(0,0,0,.08);
+}
 .flex {
   display: -webkit-box !important;
   display: -webkit-flex !important;
