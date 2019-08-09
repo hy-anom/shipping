@@ -76,6 +76,7 @@ section.feature {
   border-radius: 20px;
   padding: 30px 35px;
   text-align: center;
+  flex: 1;
 }
 .separate-right {
   margin-right: 80px;
