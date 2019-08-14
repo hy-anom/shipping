@@ -161,6 +161,10 @@ section.fulfillment {
   width: 240px;
 }
 
+.lefted {
+  text-align: left;
+}
+
 @media screen and (max-width: 767px) {
   .fulfillment-caption {
     width: 100%;
