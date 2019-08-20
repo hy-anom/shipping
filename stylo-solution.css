@@ -154,7 +154,7 @@ section.feature {
 
 section.fulfillment {
   color: #fff;
-  text-align: center;
+  text-align: left;
   background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)) ), url('images/landing/bg-fulfillment.png');
   background: -webkit-linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/landing/bg-fulfillment.png');
   background: -moz-linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/landing/bg-fulfillment.png');
@@ -176,8 +176,12 @@ section.fulfillment {
   margin: 0 auto 40px auto;
   line-height: 1.8;
 }
+.fulfillment-btn-container {
+  text-align: center;
+}
 .fulfillment-button {
   width: 240px;
+  margin:auto;
 }
 
 @media screen and (max-width: 767px) {
